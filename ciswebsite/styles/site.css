@@ -1,0 +1,432 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  /* Normal weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  /* SemiBold weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  /* Bold weight */
+  font-style: normal;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 700;
+  color: #006699;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+}
+
+.main-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 420px;
+}
+
+
+main {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.content-flow {
+  padding: 20px;
+  max-width: 1200px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body a {
+  color: #006699;
+}
+
+header {
+  background-color: rgb(184, 2, 2);
+  color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: sticky;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.logo {
+  max-width: 250px;
+  height: auto;
+  margin: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+
+nav menu {
+  background-color: rgb(184, 2, 2);
+  border: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+nav menu li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav menu li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  display: block;
+  white-space: nowrap;
+}
+
+nav menu li a:hover {
+  text-decoration: underline;
+}
+
+nav menu ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  max-width: 200px;
+  align-self: center;
+}
+
+nav {
+  width: 100%;
+  justify-content: center;
+}
+
+nav menu {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav menu li a {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.checklist {
+  width: 100%;
+}
+
+article {
+  margin: 10px;
+}
+
+button {
+  text-decoration: none;
+}
+
+aside {
+  padding-left: 20px;
+  padding-right: 20px;
+  border: #EF4035 solid 3px;
+  margin: 10px;
+  border-radius: 0.8em;
+}
+
+footer {
+  background-color: #222;
+  color: #a9a9a9;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* respond narrow */
+@media (max-width: 800px) {
+
+  #burger-button {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: white;
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+
+  nav menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  nav menu li {
+    width: 100%;
+  }
+
+  nav menu li a {
+    padding: 10px;
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 10px;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  main {
+    flex-direction: column-reverse;
+  }
+
+  .content-flow {
+    flex-direction: column-reverse;
+  }
+
+  nav {
+    margin-top: 0px;
+  }
+
+
+  nav menu {
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 5px;
+  }
+
+  nav button {
+    display: block;
+    padding: 10px;
+    width: 100%;
+  }
+
+  aside {
+    order: 1;
+  }
+
+  .advisor-section {
+    flex-direction: column !important;
+  }
+
+
+}
+
+nav menu li a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.advisor-section {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.advisor {
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+#burger-button:hover {
+  color: #222;
+}
+
+#burger-button {
+  transition: transform 0.2s ease;
+}
+
+#burger-button:hover {
+  transform: scale(1.2);
+}
+
+#burger-button:active {
+  transform: scale(0.9);
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  width: auto;
+  height: auto;
+  max-width: 90%;
+  max-height: 90vh;
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+
+.modal-image {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 90vh;
+  display: block;
+  margin: 0 auto;
+  object-fit: unset;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: red;
+}
+
+.close-button:hover {
+  color: darkred;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-button {
+  background: #006699;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.modal-button:hover {
+  background: #004466;
+}
+
+#navmenu {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+#navmenu.open {
+  max-height: 500px;
+  opacity: 1;
+}
+
+@media (min-width: 800px) {
+  #navmenu {
+    display: flex;
+    flex-direction: row;
+    max-height: none;
+    opacity: 1;
+    overflow: visible;
+  }
+}
